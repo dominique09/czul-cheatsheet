@@ -1,0 +1,1 @@
+# Dashboard de cheatsheet pour la FIR de Montréal sur VATSim
