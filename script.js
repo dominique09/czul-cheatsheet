@@ -1,5 +1,5 @@
 $(function() {
-    refreshViewer(getAnchor());
+    refreshViewer(getAnchor() || 'CYUL_TWR');
 
     $('.sheetlink').click(function(e) {
         refreshViewer(e.target.href.split('#').pop());
@@ -8,7 +8,7 @@ $(function() {
 
 
 function refreshViewer(doc){
-    $('#pdfReader').attr('data', `cheatsheets/${doc}.pdf`);
+    $('#pdfViewer').attr('src', `https://docs.google.com/viewer?url=${document.location.origin}/cheatsheets/${doc}.pdf&embedded=true`);
 
     $('.active').removeClass('active');
     $(`a[href$="#${doc}"]`).parent().addClass('active');
