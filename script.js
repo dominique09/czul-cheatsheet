@@ -8,7 +8,9 @@ $(function() {
 
 
 function refreshViewer(doc){
-    $('#pdfViewer').attr('src', `https://docs.google.com/viewer?url=${document.location.origin}/cheatsheets/${doc}.pdf&embedded=true`);
+
+    let link = `https://docs.google.com/viewer?url=${document.location.origin}/cheatsheets/${doc}.pdf&embedded=true`;
+    $('#pdfViewer').attr('src', link);
 
     $('.active').removeClass('active');
     $(`a[href$="#${doc}"]`).parent().addClass('active');
