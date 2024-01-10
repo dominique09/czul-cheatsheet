@@ -8,7 +8,6 @@ $(function() {
 
 
 function refreshViewer(doc){
-    console.log(doc);
     $('#pdfReader').attr('data', `cheatsheets/${doc}.pdf`);
 
     $('.active').removeClass('active');
