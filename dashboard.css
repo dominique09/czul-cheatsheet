@@ -75,3 +75,12 @@ body {
     display: inline-block;
     border-radius: 50%;
   }
+
+  .notes {
+    position: absolute;
+    border-top: 1px solid #428bca;
+    padding-top: 10px;
+    font-size: 10px;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
